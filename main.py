@@ -6,6 +6,7 @@ def safe_run(command):
     except subprocess.CalledProcessError as e:
         print(f"Failed to execute command: {command}")
         print(f"Details: {e}")
+
 while True:
     init = input('Do you want to init?(y/n)(default:y): ').lower()
     if init == '' or init == 'y':

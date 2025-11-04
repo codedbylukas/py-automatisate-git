@@ -41,3 +41,7 @@ The script executes direct Git commands (e.g., git add ., git commit, git push).
 - Python 3.6+ installed
 - Git installed and available in the system PATH
 - A working project directory
+
+## License
+
+MIT License
