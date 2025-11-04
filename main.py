@@ -1,11 +1,16 @@
 from os import system
 import subprocess
 
-push = input('Do you want to push it after every modifire?(y/n)(default:y): ').lower()
-if push == '' or push == 'y':
-    push = True
-else:
-    push = False
+while True:
+    push = input('Do you want to push it after every modifire?(y/n)(default:y): ').lower()
+    if push == '' or push == 'y':
+        push = True
+        break
+    elif push == "n":
+        push = False
+        break
+    else:
+        print('Answer only with y or n.')
 
 init = input('Do you want to init?(y/n)(default:y): ').lower()
 if init == '' or init == 'y':
