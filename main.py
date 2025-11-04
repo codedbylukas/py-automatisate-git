@@ -16,5 +16,6 @@ def main():
         system('git add .')
         system(f'git commit -m "{change}"')
         if push:
+            system('git pull')
             system('git push')
 main()
